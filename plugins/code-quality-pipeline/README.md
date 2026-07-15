@@ -31,9 +31,17 @@ The skill auto-loads when implementation is done, or ask for it directly:
 
 ## Dependencies
 
-The pipeline **orchestrates** review tools rather than bundling them. For full coverage, also have
-available: `feature-dev:code-reviewer` (Code Review steps), `code-simplifier` (Simplification),
-the built-in `security-review` (Security), and `code-review:code-review` (Gate B). Any missing
+The pipeline **orchestrates** review tools rather than bundling them. All of them are public — from
+Anthropic's official marketplace or built into Claude Code — so nothing here is private:
+
+```
+/plugin marketplace add anthropics/claude-plugins-official
+/plugin install feature-dev@claude-plugins-official      # Code Review (steps 1 & 4)
+/plugin install code-simplifier@claude-plugins-official  # Simplification (step 2)
+/plugin install code-review@claude-plugins-official      # Holistic pre-merge review (Gate B)
+```
+
+`security-review` (step 3) is a built-in Claude Code command — nothing to install. Any missing
 tool means that step is skipped and reported as skipped — never silently passed.
 
 ## License
