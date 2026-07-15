@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "ron-mizrahi",
+  "description": "Ron Mizrahi's public Claude Code plugins — practical engineering workflows, free for everyone.",
+  "owner": {
+    "name": "Ron Mizrahi",
+    "email": "ronmizr@gmail.com",
+    "url": "https://github.com/RonMizrahi"
+  },
+  "plugins": [
+    {
+      "name": "code-quality-pipeline",
+      "displayName": "Code Quality Pipeline",
+      "source": "./plugins/code-quality-pipeline",
+      "description": "The mandatory code-quality gates between 'code written' and 'code merged': a 4-step per-file review pipeline plus a holistic pre-merge diff review.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Ron Mizrahi",
+        "email": "ronmizr@gmail.com"
+      },
+      "category": "workflow",
+      "tags": ["code-review", "quality", "security-review", "pull-request", "workflow"]
+    }
+  ]
+}

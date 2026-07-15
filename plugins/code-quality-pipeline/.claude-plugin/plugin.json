@@ -1,0 +1,14 @@
+{
+  "name": "code-quality-pipeline",
+  "displayName": "Code Quality Pipeline",
+  "version": "0.1.0",
+  "description": "The mandatory code-quality gates between 'code written' and 'code merged': a 4-step per-file review pipeline (Code Review → Simplification → Security → Final) plus a holistic pre-merge diff review.",
+  "author": {
+    "name": "Ron Mizrahi",
+    "email": "ronmizr@gmail.com",
+    "url": "https://github.com/RonMizrahi"
+  },
+  "homepage": "https://github.com/RonMizrahi/claude-plugins",
+  "license": "MIT",
+  "keywords": ["code-review", "quality", "security-review", "pull-request", "workflow"]
+}
